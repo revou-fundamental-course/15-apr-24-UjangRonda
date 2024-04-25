@@ -4,8 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
+	<div class="container">
+		<div class="kalkulasi-wrapper" id="rumus1">
+			<h1>Cara Konversi Celcius ke Fahrenheit</h1>
+			<h1>\[T^0C = 5/9 (T^0F - 32^0)\]</h1>	
+		</div>
+		<div class="kalkulasi-wrapper" id="rumus2">
+			<h1>Cara Konversi Celcius ke Fahrenheit</h1>
+			<h1>\[T^0F = (9/5 * T^0C) + 32^0\]</h1>	
+		</div>
+		<h1 id="h1-top">TEMPERATURE</h1>
+		<h1 id="h1-bottom">CONVERSION</h1>
+		<div class="wrapper">
+			<form class="form-flex">
+				<label id="celcius-label">Celcius (T°C)</label>
+				<textarea rows="5" cols="33" id="celciusvalue"></textarea>
+			</form>
+			<div class="button-wrapper">
+				<button onclick="calculate()" id="kalkulasi"> Conversion</button>
+				<button onclick="reverse()"> Reverse</button>
+				<button onclick="reset()"> Reset</button>
+			</div>
+			<form class="form-flex">
+				<label id="farenhait-label">Fahrenheit (T°F)</label>
+				<textarea rows="5" cols="33" id="farenhaitvalue" ></textarea>
+				<label>Cara Kalkulasi</label>
+				<textarea rows="5" cols="33" id="cara-kalkulasi"></textarea>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
